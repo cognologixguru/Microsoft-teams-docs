@@ -132,6 +132,7 @@ Response body
 The following example uses the `FetchChannelList` call from the new [Microsoft Teams .NET SDK](https://www.nuget.org/packages/Microsoft.Bot.Connector.Teams):
 
 ```csharp
+// Here, "client" is an object of "ConnectorClient" 
 ConversationList channels = client.GetTeamsConnectorClient().Teams.FetchChannelList(activity.GetChannelData<TeamsChannelData>().Team.Id);
 ```
 
